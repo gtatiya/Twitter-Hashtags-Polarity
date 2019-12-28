@@ -49,9 +49,9 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((TCP_IP, TCP_PORT))
 s.listen(1)
 
-print("Waiting for TCP connection...")
+print("Waiting for TCP connection on port: %s" % str(TCP_PORT))
 #nc -lk 9999
 conn, addr = s.accept()
-print("Connected... Starting getting tweets.")
+print("Connected... Starting getting tweets from: " + str(addr))
 resp = get_tweets()
 send_tweets_to_spark(resp, conn)
