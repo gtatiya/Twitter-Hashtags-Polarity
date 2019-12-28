@@ -17,5 +17,24 @@ python3 get_tweets_location.py # TERMINAL 1
 python3 spark_analyze.py # TERMINAL 2
 ```
 
-<img src="pics/get_tweets_location.jpg" alt="drawing" width="600px"/>
+<img src="pics/get_tweets_location.jpg" alt="drawing" width="900px"/>
+
+### Get tweets based on a filter
+
+```
+python3 get_tweets_filter.py # TERMINAL 1
+python3 spark_analyze.py # TERMINAL 2
+```
+
+<img src="pics/get_tweets_filter.jpg" alt="drawing" width="900px"/>
+
+### Get tweets based on followers of a user
+
+```
+python3 get_tweets_followers.py # TERMINAL 1
+python3 spark_analyze.py # TERMINAL 2
+```
+
+<img src="pics/get_tweets_followers.jpg" alt="drawing" width="900px"/>
+
 
